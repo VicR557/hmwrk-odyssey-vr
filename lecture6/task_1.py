@@ -75,43 +75,46 @@ print(dict.get("country"))
 # Acum actualizați dicționarul cu un alt dicționar, folosind metoda update()
 
 # CODUL TĂU VINE MAI JOS:
-
+dict2 = {
+    "role":"teacher",
+    "years experience": "14"}
+dict.update(dict2)
 # CODUL TĂU VINE MAI SUS:
 
 # Setați valoarea cheii "pizza" la 10 folosind metoda setdefault()
 
 # CODUL TĂU VINE MAI JOS:
-
+dict.setdefault("pizza","10")
 # CODUL TĂU VINE MAI SUS:
 
 # Afișați dicționarul
 
 # CODUL TĂU VINE MAI JOS:
-
+print(dict)
 # CODUL TĂU VINE MAI SUS:
 
 # Ștergeți cheia "pizza" din dicționar folosind metoda pop()
 
 # CODUL TĂU VINE MAI JOS:
-
+dict.pop("pizza")
 # CODUL TĂU VINE MAI SUS:
 
 # Afișați dicționarul
 
 # CODUL TĂU VINE MAI JOS:
-
+print(dict)
 # CODUL TĂU VINE MAI SUS:
 
 # Ștergeți toate perechile de cheie-valoare din dicționar
 
 # CODUL TĂU VINE MAI JOS:
-
+dict.clear()
 # CODUL TĂU VINE MAI SUS:
 
 # Afișați dicționarul
 
 # CODUL TĂU VINE MAI JOS:
-
+print(dict)
 # CODUL TĂU VINE MAI SUS:
 
 # Asta a fost tot, ai terminat prima ta sarcină legată de dicționare
