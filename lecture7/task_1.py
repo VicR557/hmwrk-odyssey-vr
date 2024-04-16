@@ -67,7 +67,7 @@ if "Python" in txt:
      print("Textul contine cuvantul \"Python\"")
 elif "Java" in txt:
      print("Textul nu contine cuvantul Python, dar contine cuvantul \"Java\"")
-else: print("Textul nu contine niciunul dintre cuvintele cautate") 
+else: print("Textul nu contine niciun cuvant din cele cautate") 
 # CODUL TĂU VINE MAI SUS:
 
 # Folosind o instrucțiune condițională, verificați dacă textul conține cuvântul "Python" și cuvântul "Java" și afișați un mesaj corespunzător.
@@ -75,7 +75,12 @@ else: print("Textul nu contine niciunul dintre cuvintele cautate")
 # Dacă nu conține niciunul dintre ele, afișați un mesaj corespunzător.
 
 # CODUL TĂU VINE MAI JOS:
-
+if "Python" in txt and "Java" in txt:
+     print("Textul contine cuvantele \"Python\" si \"Java\"")
+elif "Python" in txt or "Java" in txt:
+     print("Textul contine un cuvant din cele cautate")
+else: 
+     print("Textul nu contine niciun cuvant din cele cautate")
 # CODUL TĂU VINE MAI SUS:
 
 # Extrageți de la tastatură utilizând funcția input un număr de la 1 la 5 și atribuiți-l variabilei number.
@@ -87,7 +92,16 @@ else: print("Textul nu contine niciunul dintre cuvintele cautate")
 # pentru 5 - printați "Cinci"
 
 # CODUL TĂU VINE MAI JOS:
-
+number = int(input("Scrieti un numar de la 1 la 5: "))
+if number == 1:
+     print("Unu")
+elif number == 2:
+     print("Doi")
+elif number == 3:
+     print("Trei")
+elif number == 4:
+     print("Patru")
+else: print("Cinci")  
 # CODUL TĂU VINE MAI SUS:
 
 
