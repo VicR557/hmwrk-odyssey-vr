@@ -101,7 +101,9 @@ elif number == 3:
      print("Trei")
 elif number == 4:
      print("Patru")
-else: print("Cinci")  
+elif number == 5:
+     print("Cinci")
+else: print("Numarul nu este de la 1 la 5")  
 # CODUL TĂU VINE MAI SUS:
 
 
