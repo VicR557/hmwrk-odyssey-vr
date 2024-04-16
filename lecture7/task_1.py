@@ -3,43 +3,59 @@
 # Creați o variabilă numită number și atribuiți-i o valoare întreagă.
 
 # CODUL TĂU VINE MAI JOS:
-
+number = 27
 # CODUL TĂU VINE MAI SUS:
 
 # Folosind o instrucțiune condițională, verificați dacă numărul este pozitiv și afișați un mesaj corespunzător.
 
 # CODUL TĂU VINE MAI JOS:
-
-# CODUL TĂU VINE MAI SUS:
+if number > 0:
+     print("Numarul este pozitiv")
+else : 
+     print("Numarul nu este negativ sau egal cu zero")
+   # CODUL TĂU VINE MAI SUS:
 
 # Folosind o instrucțiune condițională, verificați dacă numărul este par și afișați un mesaj corespunzător.
 
 # CODUL TĂU VINE MAI JOS:
-
+if number % 2 == 0:
+     print("Numarul este par")
+else : 
+     print("Numarul nu este par")
 # CODUL TĂU VINE MAI SUS:
 
 # Folosind o instrucțiune condițională, verificați dacă numărul este impar și afișați un mesaj corespunzător.
 
 # CODUL TĂU VINE MAI JOS:
-
+if not number % 2 == 0:
+     print("Numarul este impar")
+else : 
+     print("Numarul nu este impar")
 # CODUL TĂU VINE MAI SUS:
 
 # Creați o variabilă text și atribuiți-i un șir de caractere.
 
 # CODUL TĂU VINE MAI JOS:
-
+txt = '''There are not too many differences between the spectra of different samples.\n 
+However, there are some variations of the intensity of some peaks.'''
 # CODUL TĂU VINE MAI SUS:
 
 # Folosind o instrucțiune condițională, verificați dacă textul conține cuvântul "Python" și afișați un mesaj corespunzător.
 
 # CODUL TĂU VINE MAI JOS:
-
+if "Python" in txt:
+     print("Textul contine cuvantul \"Python\"")
+else:
+     print("Textul nu contine cuvantul cautat")
 # CODUL TĂU VINE MAI SUS:
 
 # Folosind o instrucțiune condițională, verificați dacă textul conține cuvântul "Java" și afișați un mesaj corespunzător.
 
 # CODUL TĂU VINE MAI JOS:
-
+if "Java" in txt:
+     print("Textul contine cuvantul \"Java\"")
+else:
+     print("Textul nu contine cuvantul cautat")
 # CODUL TĂU VINE MAI SUS:
 
 # Folosind o instrucțiune condițională, verificați dacă textul conține cuvântul "Python" și afișați un mesaj corespunzător.
@@ -47,7 +63,11 @@
 # Dacă nu conține niciunul dintre ele, afișați un mesaj corespunzător.
 
 # CODUL TĂU VINE MAI JOS:
-
+if "Python" in txt:
+     print("Textul contine cuvantul \"Python\"")
+elif "Java" in txt:
+     print("Textul nu contine cuvantul Python, dar contine cuvantul \"Java\"")
+else: print("Textul nu contine niciunul dintre cuvintele cautate") 
 # CODUL TĂU VINE MAI SUS:
 
 # Folosind o instrucțiune condițională, verificați dacă textul conține cuvântul "Python" și cuvântul "Java" și afișați un mesaj corespunzător.
