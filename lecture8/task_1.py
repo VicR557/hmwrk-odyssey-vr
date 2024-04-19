@@ -6,7 +6,6 @@
 lst= []
 for i in range(1,11):
     lst.append(i)
-print(lst)
 # CODUL TĂU VINE MAI SUS:
 
 # Folosind un for loop, parcurgeți lista creată și afișați numai numerele pare.
@@ -48,31 +47,41 @@ for num in matrix:
 # Creați o secvență de numere folosind funcția range() și apoi iterați prin această secvență folosind un for loop pentru a afișa numerele.
 
 # CODUL TĂU VINE MAI JOS:
+lst1= range(1,38,4) 
+for i in lst1:
+    print(i)
 
 # CODUL TĂU VINE MAI SUS:
 
 # Folosiți funcția enumerate() pentru a itera printr-o listă și a afișa indexul fiecărui element alături de valoarea sa.
 
 # CODUL TĂU VINE MAI JOS:
-
+for i, num in enumerate(lst1):
+    print(i, num)
 # CODUL TĂU VINE MAI SUS:
 
 # Folosiți funcția zip() pentru a itera simultan prin două liste și a afișa elementele corespunzătoare.
 
 # CODUL TĂU VINE MAI JOS:
-
+for num, num1 in zip(lst, lst1):
+    print(num, num1)
 # CODUL TĂU VINE MAI SUS:
 
 # Creați o listă de numere de la 1 la 10 folosind un for loop și funcția range().
 
 # CODUL TĂU VINE MAI JOS:
-
+lstr= []
+for i in range(1,11):
+    lstr.append(i)
 # CODUL TĂU VINE MAI SUS:
 
 # Folosind un buclă while, dublează valorile listei până când primul element va deveni mai mare decât 50.
 
 # CODUL TĂU VINE MAI JOS:
-
+num = lstr[0]
+while num <= 50:
+    num = num*2
+    print(num)
 # CODUL TĂU VINE MAI SUS:
 
 # Generează și printează o listă cu toate numerele pătrat perfect din intervalul [1, 100].
