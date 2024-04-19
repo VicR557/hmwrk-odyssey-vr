@@ -3,31 +3,46 @@
 # Creați o listă de numere de la 1 la 10 folosind un for loop și funcția range().
 
 # CODUL TĂU VINE MAI JOS:
-
+lst= []
+for i in range(1,11):
+    lst.append(i)
+print(lst)
 # CODUL TĂU VINE MAI SUS:
 
 # Folosind un for loop, parcurgeți lista creată și afișați numai numerele pare.
 
 # CODUL TĂU VINE MAI JOS:
-
+for par in lst:
+    if par % 2 == 0:
+        print(par)
 # CODUL TĂU VINE MAI SUS:
 
 # Folosind un while loop, creați o variabilă 'i' inițializată cu 1 și incrementați-o până când ajunge la 5. Afișați valoarea 'i' la fiecare pas.
 
 # CODUL TĂU VINE MAI JOS:
-
+i = 1
+while i<=5:
+    print(i)
+    i+=1
 # CODUL TĂU VINE MAI SUS:
 
 # Creați un dicționar person cu cheile 'name', 'age' și 'city' și iterați prin dicționar afișând perechile de cheie-valoare.
 
 # CODUL TĂU VINE MAI JOS:
+person = {"name":"Max", "age":37, "city":"Barcelona"}
+for key, value in person.items():
+    print(key, value)
 
 # CODUL TĂU VINE MAI SUS:
 
 # Utilizați un for loop pentru a itera printr-o listă de liste (matrice) și afișați fiecare element.
 
 # CODUL TĂU VINE MAI JOS:
-
+matrix = [[1, 55, 109], [4, 101, 78], [1, 32, 11]]
+for num in matrix:
+    for n in num:
+        print(n)
+     
 # CODUL TĂU VINE MAI SUS:
 
 # Creați o secvență de numere folosind funcția range() și apoi iterați prin această secvență folosind un for loop pentru a afișa numerele.
