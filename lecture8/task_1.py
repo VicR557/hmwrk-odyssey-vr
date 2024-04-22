@@ -169,7 +169,10 @@ for row in range(int(dimensiune)):
 # 123456
 
 # CODUL TĂU VINE MAI JOS:
-
+str_num = "1"
+for i in range(2,8):
+    print(str_num)
+    str_num = str_num + str(i)
 # CODUL TĂU VINE MAI SUS:
 
 # Afișarea 2:
@@ -181,7 +184,14 @@ for row in range(int(dimensiune)):
 # 5
 
 # CODUL TĂU VINE MAI JOS:
-
+another_list = list(range(1,6)[::-1])
+while len(another_list) >= 1:
+    for i in another_list:
+        str(i)
+        print(i, end="")
+    print()
+    another_list.pop()
+    
 # CODUL TĂU VINE MAI SUS:
 
 # Afișarea 3:
@@ -195,7 +205,12 @@ for row in range(int(dimensiune)):
 # g
 
 # CODUL TĂU VINE MAI JOS:
-
+another_str = ['a','b','c','d','e','f','g']
+while len(another_str) >= 1:
+    for i in another_str:
+        print(i, end="")
+    print()
+    del another_str[0]
 # CODUL TĂU VINE MAI SUS:
 
 # Afișarea 4:
@@ -210,7 +225,12 @@ for row in range(int(dimensiune)):
 # -+-+-+-+-+-+-+-+
 
 # CODUL TĂU VINE MAI JOS:
-
+for i in range(2):
+    for i in range(2):
+        print("+-"*8, end="")
+        print()
+        print("-+"*8, end="")
+        print()
 # CODUL TĂU VINE MAI SUS:
 
 # Afișarea 5:
