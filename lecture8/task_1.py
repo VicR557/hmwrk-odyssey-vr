@@ -70,7 +70,7 @@ for num, num1 in zip(lst, lst1):
 # Creați o listă de numere de la 1 la 10 folosind un for loop și funcția range().
 
 # CODUL TĂU VINE MAI JOS:
-lstr= []
+lstr = []
 for i in range(1,11):
     lstr.append(i)
 # CODUL TĂU VINE MAI SUS:
@@ -87,31 +87,56 @@ while num <= 50:
 # Generează și printează o listă cu toate numerele pătrat perfect din intervalul [1, 100].
 
 # CODUL TĂU VINE MAI JOS:
-
+    #o metoda:
+import math
+for i in range(1,101):
+    if math.sqrt(i) % 1 == 0:
+        print(i) 
+    #alta metoda
+i = 1
+while i**2 <= 100:
+    print(i**2)
+    i += 1
 # CODUL TĂU VINE MAI SUS:
 
 # Folosind un buclă for , printează tabla înmulțirii pentru numărul 7.
 
 # CODUL TĂU VINE MAI JOS:
-
+for i in range (1,11):
+    print(f"7 x {i} =", 7*i)
 # CODUL TĂU VINE MAI SUS:
 
 # Creează o listă de liste, unde fiecare sub-listă conține perechi (i, j) pentru i și j de la 1 la 5. Printează această listă de perechi.
 
 # CODUL TĂU VINE MAI JOS:
-
+row = [0,0]
+mat = []
+for i in range(1,6):
+    row[0] = i
+    for j in range(1,6):
+        row[1] = j
+        mat.append(row.copy())
+print(mat)
 # CODUL TĂU VINE MAI SUS:
 
 # Parcurge lista de la punctul anterior și printează doar perechile unde i < j .
 
 # CODUL TĂU VINE MAI JOS:
-
+for line in mat:
+    if line[0] < line[1]:
+        print(line)
 # CODUL TĂU VINE MAI SUS:
 
 # Folosind un buclă while , caută și printează prima valoare care este mai mare decât 10 dintr-o listă cu numere random creată de tine. Dacă nu există, printează "Nu există valori mai mari decât 10".
 
 # CODUL TĂU VINE MAI JOS:
-
+random = [1,6,8,11,3,4444,15,666,58]
+x = 0
+while x < len(random):
+    if random[x] > 10:
+        print(random[x])
+        break
+    x += 1
 # CODUL TĂU VINE MAI SUS:
 
 # Folosind loop-uri Creează un pătrat de stele ( * ) folosind bucle încadrate. Dimensiunea pătratului va fi citită de la utilizator.
@@ -123,6 +148,13 @@ while num <= 50:
 # *****
 
 # CODUL TĂU VINE MAI JOS:
+dimensiune = input("Scrie dimensiunea patratului: ")
+patrat = []
+for row in range(int(dimensiune)):
+    for col in range(int(dimensiune)):
+        print("*", end="")
+    print()
+    
 
 # CODUL TĂU VINE MAI SUS:
 
