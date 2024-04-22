@@ -151,13 +151,10 @@ else:
 
 # CODUL TĂU VINE MAI JOS:
 dimensiune = input("Scrie dimensiunea patratului: ")
-patrat = []
 for row in range(int(dimensiune)):
     for col in range(int(dimensiune)):
         print("*", end="")
     print()
-    
-
 # CODUL TĂU VINE MAI SUS:
 
 # Folosind for sau while loops realizați afișările de mai jos
