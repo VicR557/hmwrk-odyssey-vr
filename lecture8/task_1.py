@@ -130,13 +130,15 @@ for line in mat:
 # Folosind un buclă while , caută și printează prima valoare care este mai mare decât 10 dintr-o listă cu numere random creată de tine. Dacă nu există, printează "Nu există valori mai mari decât 10".
 
 # CODUL TĂU VINE MAI JOS:
-random = [1,6,8,11,3,4444,15,666,58]
+random = [1,6,8,1,3,4444,15,666,58]
 x = 0
 while x < len(random):
     if random[x] > 10:
         print(random[x])
         break
     x += 1
+else: 
+    print("Nu există valori mai mari decât 10")
 # CODUL TĂU VINE MAI SUS:
 
 # Folosind loop-uri Creează un pătrat de stele ( * ) folosind bucle încadrate. Dimensiunea pătratului va fi citită de la utilizator.
@@ -246,7 +248,19 @@ for i in range(2):
 # 243
 
 # CODUL TĂU VINE MAI JOS:
-
+final_list=[]
+i = 1 
+while 3**i <= 243:
+    final_list.append(3**i)
+    for j in final_list:
+        print(f"{j} ", end="")
+    i += 1
+    print()
+while len(final_list) > 1:
+    del final_list[0]
+    for k in final_list:
+        print(f"{k} ", end="")
+    print()
 # CODUL TĂU VINE MAI SUS:
 
 # Completați sarcinile de mai sus pentru a exersa lucrul cu buclele în Python.
