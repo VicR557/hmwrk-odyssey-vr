@@ -339,8 +339,14 @@ Exemplu: Pentru numărul 153 rezultatul va fi `True`, iar pentru numărul 10 rez
 """
 
 # CODUL TĂU VINE MAI JOS:
-def task_21():
-    pass
+def task_21(numar_task21):
+    sum = 0
+    for i in str(numar_task21):
+        sum = sum + int(i)**len(str(numar_task21))
+    if numar_task21 == sum:
+        return True
+    else: 
+        return False
 # CODUL TĂU VINE MAI SUS:
 
 # VERIFICATION PROCESS
@@ -354,8 +360,15 @@ Exemplu: Pentru numărul 18 rezultatul va fi `True`, iar pentru numărul 14 rezu
 """
 
 # CODUL TĂU VINE MAI JOS:
-def task_22():
-    pass
+def task_22(numar_task22):
+    sum = 0
+    for i in str(numar_task22):
+        sum = sum + int(i)
+    if numar_task22 % sum == 0:
+        return True
+    else: 
+        return False
+    
 # CODUL TĂU VINE MAI SUS:
 
 # VERIFICATION PROCESS
@@ -368,8 +381,14 @@ Exemplu: Pentru numărul 5 rezultatul va fi [0, 1, 1, 2, 3]
 """
 
 # CODUL TĂU VINE MAI JOS:
-def task_23():
-    pass
+def task_23(numar_task23):
+    fib_list = [0,1]
+    if numar_task23 <= 2:
+        return(fib_list[:numar_task23])
+    else:
+        for i in range(2, numar_task23):
+                fib_list.append(fib_list[i-1]+fib_list[i-2])
+    return(fib_list)
 # CODUL TĂU VINE MAI SUS:
 
 # VERIFICATION PROCESS
@@ -382,8 +401,9 @@ Exemplu: Pentru numărul 10 rezultatul va fi [1, 2, 5, 10]
 """
 
 # CODUL TĂU VINE MAI JOS:
-def task_24():
-    pass
+def task_24(numar_task24):
+    task24_list = [i for i in range(1,numar_task24 + 1) if numar_task24%i == 0]
+    return(task24_list)
 # CODUL TĂU VINE MAI SUS:
 
 # VERIFICATION PROCESS
