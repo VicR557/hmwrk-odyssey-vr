@@ -88,8 +88,9 @@ Exemplu: Pentru n=5 rezultatul returnat va fi {1: 1, 2: 8, 3: 27, 4: 64, 5: 125}
 """
 
 # CODUL TĂU VINE MAI JOS:
-def task_6():
-    pass
+def task_6(alt_number):
+    cub_dict = {i: i**3 for i in range(1, alt_number+1)}
+    return(cub_dict)
 # CODUL TĂU VINE MAI SUS:
 
 # VERIFICATION PROCESS
@@ -104,8 +105,9 @@ Exemplu: Pentru n=50 rezultatul returnat va fi {3, 6, 9, 12, 15, 18, 21, 24, 27,
 """
 
 # CODUL TĂU VINE MAI JOS:
-def task_7():
-    pass
+def task_7(number_task7):
+    set_divby3 = {i for i in range(1, number_task7+1) if i%3==0}
+    return(set_divby3)
 # CODUL TĂU VINE MAI SUS:
 
 # VERIFICATION PROCESS
@@ -118,8 +120,9 @@ Exemplu: Pentru lista [1, 2, 3, 4, 5] rezultatul va fi 3.0
 """
 
 # CODUL TĂU VINE MAI JOS:
-def task_8():
-    pass
+def task_8(list_task8):
+    Sum = sum(list_task8)/len(list_task8)
+    return(Sum)
 # CODUL TĂU VINE MAI SUS:
 
 
@@ -133,8 +136,8 @@ Exemplu: Pentru numărul 4 rezultatul va fi `True`, iar pentru numărul 5 rezult
 """
 
 # CODUL TĂU VINE MAI JOS:
-def task_9():
-    pass
+def task_9(number_task9):
+    return(bool(number_task9 % 2 == 0))
 # CODUL TĂU VINE MAI SUS:
 
 # VERIFICATION PROCESS
@@ -150,7 +153,7 @@ Exemplu: Pentru numele "Ana", vârsta 32 și orașul "București" rezultatul va 
 # CODUL TĂU VINE MAI JOS:
 def task_10():
     pass
-# CODUL TĂU VINE MAI SUS:
+    # CODUL TĂU VINE MAI SUS:
 
 # VERIFICATION PROCESS
 print(session.check_task_10(task_10))
@@ -176,8 +179,11 @@ Exemplu: Pentru numărul 5 rezultatul va fi 120
 """
 
 # CODUL TĂU VINE MAI JOS:
-def task_12():
-    pass
+def task_12(numar_task12):
+    if numar_task12 == 0:
+        return 1
+    else:
+        return numar_task12 * task_12(numar_task12 - 1)
 # CODUL TĂU VINE MAI SUS:
 
 # VERIFICATION PROCESS
@@ -190,8 +196,10 @@ Exemplu: Pentru numerele 3 și 4 rezultatul va fi (7, 12)
 """
 
 # CODUL TĂU VINE MAI JOS:
-def task_13():
-    pass
+def task_13(a,b):
+    suma = a + b
+    produs = a*b
+    return(suma, produs)
 # CODUL TĂU VINE MAI SUS:
 
 # VERIFICATION PROCESS
@@ -204,8 +212,13 @@ Exemplu: Pentru vârsta 32 rezultatul va fi "adult"
 """
 
 # CODUL TĂU VINE MAI JOS:
-def task_14():
-    pass
+def task_14(varsta):
+    if varsta <18:
+        return("minor")
+    elif varsta <= 65:
+        return("adult")
+    else:
+        return("senior")
 # CODUL TĂU VINE MAI SUS:
 
 # VERIFICATION PROCESS
@@ -218,8 +231,9 @@ Exemplu: Pentru string-ul "ana" rezultatul va fi `True`, iar pentru string-ul "t
 """
 
 # CODUL TĂU VINE MAI JOS:
-def task_15():
-    pass
+def task_15(text):
+    text_inv = text[::-1]
+    return text_inv == text
 # CODUL TĂU VINE MAI SUS:
 
 # VERIFICATION PROCESS
