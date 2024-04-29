@@ -293,8 +293,16 @@ Exemplu: Pentru numărul 7 rezultatul va fi `True`, iar pentru numărul 10 rezul
 """
 
 # CODUL TĂU VINE MAI JOS:
-def task_19():
-    pass
+def task_19(numar_task19):
+    if numar_task19 <= 1:
+        return False
+    else: 
+        for i in range(2, int(numar_task19**0.5)+1):
+            if numar_task19 % i == 0: 
+                return False
+            else: 
+                return True
+                
 # CODUL TĂU VINE MAI SUS:
 
 # VERIFICATION PROCESS
@@ -308,8 +316,16 @@ Exemplu: Pentru numărul 28 rezultatul va fi `True`, iar pentru numărul 10 rezu
 """
 
 # CODUL TĂU VINE MAI JOS:
-def task_20():
-    pass
+def task_20(numar_task20):
+    suma_div = 0
+    if numar_task20 > 0:
+        for i in range(1, numar_task20):
+            if numar_task20 % i == 0:
+                suma_div = suma_div + i
+        if numar_task20 == suma_div:
+            return True
+        else: 
+            return False
 # CODUL TĂU VINE MAI SUS:
 
 # VERIFICATION PROCESS
