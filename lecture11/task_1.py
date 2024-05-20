@@ -90,8 +90,13 @@ Exemplu: task_6(3, 1, 2, a=10, b=20, c='a', d='b') ➞ [1, 2, 3], ['c', 'd']
 """
 
 # CODUL TĂU VINE MAI JOS:
-def task_5():
-    pass
+def task_5(*numar, **caracter):
+    numar_list = [nr for nr in numar if isinstance(nr, int)] 
+    caracter_cheie = [car for car, valoare in caracter.items() if isinstance(valoare, str)]
+    numar_list.sort()
+    caracter_cheie.sort()
+    
+    return numar_list, caracter_cheie
 # CODUL TĂU VINE MAI SUS:
 
 # VERIFICATION PROCESS
@@ -104,8 +109,8 @@ Exemplu: task_6(a=1, b=2, c=3) ➞ {'a': 1, 'b': 2, 'c': 3}
 """
 
 # CODUL TĂU VINE MAI JOS:
-def task_6():
-    pass
+def task_6(**dictionar):
+    return dictionar
 # CODUL TĂU VINE MAI SUS:
 
 # VERIFICATION PROCESS
@@ -119,8 +124,25 @@ Exemplu: task_7(1, 'a', 2, 'b') ➞ {'str': ['a', 'b'], 'int': [1, 2]}
 """
 
 # CODUL TĂU VINE MAI JOS:
-def task_7():
-    pass
+def task_7(*args):
+    lista_caractere = []
+    lista_numere = []
+    for arg in args:
+        if isinstance(arg, (int, float)):
+            lista_numere.append(arg)
+        elif isinstance(arg, str):
+            lista_caractere.append(arg)
+    
+    dictionar_task7 = {
+        'str': lista_caractere,
+        'int': lista_numere
+    }
+    return dictionar_task7
+
+# Exemplu de utilizare:
+result = task_7('hello', 42, 'world', 3.14, 'python', 7)
+print(result)  # Output: {'str': ['hello', 'world', 'python'], 'int': [42, 3.14, 7]}
+
 # CODUL TĂU VINE MAI SUS:
 
 # VERIFICATION PROCESS
@@ -134,8 +156,21 @@ Exemplu: task_8('madam', 'hello', 'level', 'world') ➞ {'palindrom': ['madam', 
 """
 
 # CODUL TĂU VINE MAI JOS:
-def task_8():
-    pass
+def task_8(*args):
+    da_pal = []
+    nu_pal = []
+    for arg in args:
+        if arg == arg[::-1]:
+            da_pal.append(arg)
+        else:
+            nu_pal.append(arg)
+    
+    dictionar_task8 = {
+        'palindrom': da_pal,
+        'non_palindrom': nu_pal
+    }
+    return dictionar_task8
+   
 # CODUL TĂU VINE MAI SUS:
 
 # VERIFICATION PROCESS
@@ -149,8 +184,9 @@ Exemplu: task_9(1, 2, 3, 4, 5, number=2) ➞ [2, 4]
 """
 
 # CODUL TĂU VINE MAI JOS:
-def task_9():
-    pass
+def task_9(*args, number):
+    lista_task9 = [arg for arg in args if isinstance(arg,int) and arg % number == 0]
+    return lista_task9
 # CODUL TĂU VINE MAI SUS:
 
 # VERIFICATION PROCESS
@@ -164,8 +200,9 @@ Exemplu: task_10(1, 2, 3, 4, 5, number=2) ➞ [2, 4]
 """
 
 # CODUL TĂU VINE MAI JOS:
-def task_10():
-    pass
+def task_10(*args, number):
+    lista_task10 = [arg for arg in args if isinstance(arg,int) and number % arg == 0]
+    return lista_task10
 # CODUL TĂU VINE MAI SUS:
 
 # VERIFICATION PROCESS
@@ -180,8 +217,14 @@ Exemplu: task_11(1, 1, 2, 3, 5, 9) ➞ False
 """
 
 # CODUL TĂU VINE MAI JOS:
-def task_11():
-    pass
+def task_11(*args):
+    if len(args) < 2:
+        return False
+    else:
+        for i in range(2, len(args)):
+            if args[i] != args[i - 1] + args[i - 2]:
+                return False 
+    return True
 # CODUL TĂU VINE MAI SUS:
 
 # VERIFICATION PROCESS
