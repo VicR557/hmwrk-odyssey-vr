@@ -239,8 +239,14 @@ Exemplu: task_12(1, 2, 3, 4) ➞ False
 """
 
 # CODUL TĂU VINE MAI JOS:
-def task_12():
-    pass
+def task_12(*args):
+    for arg in args:
+        if not isinstance(arg,int) or arg <= 1:
+            return False
+        for i in range(2, int(arg**0.5)+1):
+                if arg % i == 0: 
+                    return False 
+    return True
 # CODUL TĂU VINE MAI SUS:
 
 # VERIFICATION PROCESS
@@ -255,8 +261,15 @@ Exemplu: task_13('hello', 'world') ➞ False
 """
 
 # CODUL TĂU VINE MAI JOS:
-def task_13():
-    pass
+def task_13(cuvant, *cuvinte):
+    if not isinstance(cuvant, str) and not isinstance(cuvinte,str):
+        return False
+    for word in cuvinte:
+        if len(word) != len(cuvant):
+            return False
+        elif sorted(word) != sorted(cuvant):
+            return False
+    return True
 # CODUL TĂU VINE MAI SUS:
 
 # VERIFICATION PROCESS
@@ -270,8 +283,11 @@ Exemplu: task_14('home', 'same', 'meme', sub_string="me") ➞ ['home', 'meme', '
 """
 
 # CODUL TĂU VINE MAI JOS:
-def task_14():
-    pass
+def task_14(sub_string, *args):
+    if not isinstance(sub_string, str):
+        raise TypeError("sub_string must be a string")
+    substring_list = [arg for arg in args if isinstance(arg, str) and sub_string in arg]
+    return substring_list
 # CODUL TĂU VINE MAI SUS:
 
 # VERIFICATION PROCESS
